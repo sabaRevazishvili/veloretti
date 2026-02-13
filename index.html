@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VELORETTI</title>
+    <link rel="icon" href="images/bmx.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <div class="burgerBar" id="burgerBar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="menu" id="menu">
+          <input
+            class="search"
+            id="search"
+            type="text"
+            placeholder="Search for topic"
+          />
+          <ul id="list" class="menu-links">
+            <li><a class="atag" href="#section1">About</a></li>
+            <li><a class="atag" href="#section2">Forever forward</a></li>
+            <li>
+              <a class="atag" href="#section3">Service and maintenance</a>
+            </li>
+            <li><a class="atag" href="#section4">Part of Pon.Bike</a></li>
+            <li><a class="atag" href="#section5">Made for you</a></li>
+            <li><a class="atag" href="#section6">Accessories</a></li>
+            <li><a class="atag" href="#section7">bicycles</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <i class="fa-solid fa-person-biking"></i>
+          <h1>VELORETTI</h1>
+        </div>
+        <button class="log-in" id="log-in">Register</button>
+        <div class="form-container" id="form-container">
+          <form action="" id="login" method="POST">
+            <div class="form-div">
+              <label for="userfield">Username</label>
+              <input type="text" name="username" id="userfield" class="inpt" />
+              <p class="error-text" id="error-username"></p>
+            </div>
+            <div class="form-div">
+              <label for="passwfield">Password</label>
+              <input
+                type="password"
+                name="passw"
+                id="passwfield"
+                class="inpt"
+              />
+              <button class="log-in hide" id="show">show</button>
+              <p class="error-text" id="error-passw"></p>
+              <div id="contain1">
+                <p>Password must contain:</p>
+                <ul>
+                  <li>At least one digit</li>
+                  <li>8-16 character</li>
+                </ul>
+              </div>
+            </div>
+            <div class="form-div">
+              <label for="">Repeat Password</label>
+              <input
+                type="password"
+                name="passw2"
+                id="passw2field"
+                class="inpt"
+              />
+              <p class="error-text" id="error-passw2"></p>
+            </div>
+            <div class="second">
+              <input type="radio" name="gender" class="radio-gender" />
+              <label for="">Male</label>
+              <input type="radio" name="gender" class="radio-gender" />
+              <label for="">Female</label>
+              <p class="error-text" id="error-gender"></p>
+            </div>
+            <div class="second">
+              <input type="checkbox" name="agree" id="checkagree" />
+              <label for="">I agree terms and conditions</label>
+              <p class="error-text" id="error-agree"></p>
+            </div>
+            <button class="log-in second" type="submit">registration</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="background-image">
+          <div class="about-container">
+            <h2>About us</h2>
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="forever-container">
+          <img class="forever-bike" src="images/image (2).png" />
+          <div class="forever-container1 pad">
+            <h2>Forever forward</h2>
+            <p>
+              Our bikes are made to stand the test of time, both aestneticaly
+              and practically. Whether you're after a state of the art electric
+              bike, a classic clty bike, or a klds bike for the school run, we
+              want to heip make your commute the best part of your day
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="background-image three">
+          <div class="madeforyou-container first">
+            <div class="madeforyou-container1">
+              <h2>Service and maintenance</h2>
+              <p>
+                The lease includes an all-in service package. Throughout the
+                entire 36 months, you are fully insured against damage, theft
+                and maintenance. In addition, you always have access to roadside
+                assistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section4">
+        <div class="forever-container">
+          <div class="forever-container1">
+            <h2>Part of Pon.Bike</h2>
+            <p>
+              Velorett was founded in Amsterdam in 2012 with a mission to make
+              clean, timeless bikes that are great quality and delivered to your
+              door at a fair price. We are proud to now be part of Pon.Bike, the
+              world-leading family of bike brands.
+            </p>
+          </div>
+          <img class="forever-bike" src="images/image (1).png" />
+        </div>
+      </section>
+      <section id="section5">
+        <div class="background-image two">
+          <div class="madeforyou-container">
+            <div class="madeforyou-container1">
+              <h2>Made for you</h2>
+              <p>
+                Elevate your ride with a bicycle that mirrors your unique style
+                and personality. From an Ace Two electric bike with the latest
+                technology packed into a minimalist design, or a bright yellow
+                Berlin for those who like to ride light and have a craving for
+                nostalgia. Our diverse range of models and colours cater to
+                riders of all kinds.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section6">
+        <div class="accordions">
+          <div class="accessories-container">
+            <h2>Accessories</h2>
+          </div>
+          <div class="accordions-container" id="accordion">
+            <div class="accordion-container">
+              <div class="title-container">
+                <h3 class="accordion-title">Silent and powerful mid- motor</h3>
+              </div>
+              <div class="p-container">
+                <img class="bike" src="images/acc-1.png" />
+                <div class="desc-container">
+                  <p class="accordion-description">
+                    Natural and powerful. The 65Nm torque mid-engine gives you
+                    all the power you need. Because the engine is directly
+                    connected to your pedals, it automatically adjusts its power
+                    to your torque instead of speed. This gives you the most
+                    natural electric biking experience there is.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <div class="title-container">
+                <h3 class="accordion-title">Enviolo® automated gears</h3>
+              </div>
+              <div class="p-container">
+                <img class="bike one" src="images/acc-2.png" />
+                <div class="desc-container">
+                  <p class="accordion-description">
+                    Never think about shifting gears again. The Enviolo® gear
+                    system takes automated gear-shifting to the next level,
+                    delivering the ultimate ride experience every time. This
+                    advanced technology effortlessly shifts gears to optimize
+                    performance, delivering a natural and effortless ride. Say
+                    goodbye to clunky gear changes and hello to a ride that's
+                    both easy and efficient.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <div class="title-container">
+                <h3 class="accordion-title">Built-in display</h3>
+              </div>
+              <div class="p-container">
+                <img class="bike" src="images/acc-7.png" />
+                <div class="desc-container">
+                  <p class="accordion-description">
+                    Discover a new level of convenience and control with our
+                    elegantly designed integrated display. Everything you need
+                    to manage your ride is right at your fingertips, from
+                    customizing your bike's settings to navigating unfamiliar
+                    parts of the city. And with seamless integration to our app,
+                    you can access all your data and ride information with ease.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <div class="title-container">
+                <h3 class="accordion-title">LED brake light</h3>
+              </div>
+              <div class="p-container">
+                <img class="bike one" src="images/acc-4.png" />
+                <div class="desc-container">
+                  <p class="accordion-description">
+                    When commuting, safety is priority. We acknowledge the
+                    significance of being alert and responsive on the road.
+                    That's why we created our brake light to activate instantly
+                    and illuminate brightly upon pressing the brakes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <div class="title-container">
+                <h3 class="accordion-title">Shimano® hydraulic discbrakes</h3>
+              </div>
+              <div class="p-container">
+                <img class="bike" src="images/acc-6.png" />
+                <div class="desc-container">
+                  <p class="accordion-description">
+                    The Shimano® discbrakes are premium hydraulic disc brakes
+                    designed to deliver lightning-fast stopping power, so you
+                    can ride with complete confidence and control. Rest assured,
+                    you'll feel the difference in the moments you need it most.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section7">
+        <div class="bicycles-container">
+          <h2>bicycles</h2>
+        </div>
+        <div id="image-carousel" class="splide" aria-label="Beautiful Images">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/slider-ivy.png" alt="" />
+                <div class="manufacturer-container">
+                  <h3>Ivy</h3>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider-ace.png" alt="" />
+                <div class="manufacturer-container">
+                  <h3>Ace</h3>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider-Caferracer.png" alt="" />
+                <div class="manufacturer-container">
+                  <h3>Caferracer</h3>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <img src="images/slider-robin.png" alt="" />
+                <div class="manufacturer-container">
+                  <h3>Robyn</h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-container">
+          <div class="one-container">
+            <h4>Product</h4>
+            <ul>
+              <li><a>Accessories</a></li>
+              <li><a>bicycles</a></li>
+            </ul>
+          </div>
+          <div class="one-container">
+            <h4>About</h4>
+            <ul>
+              <li><a>About us</a></li>
+              <li><a>Forewer forward</a></li>
+              <li><a>Service</a></li>
+              <li><a>Part of Pon.Bike</a></li>
+              <li><a>Made for you</a></li>
+            </ul>
+          </div>
+          <div class="one-container">
+            <h4>Legal</h4>
+            <ul>
+              <li><a>Terms</a></li>
+              <li><a>Privacy</a></li>
+              <li><a>Licenses</a></li>
+            </ul>
+          </div>
+          <div class="one-container">
+            <h4>Contact</h4>
+            <ul class="contact-ul">
+              <li>
+                <a><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <section>
+        <div class="cookies-container" id="cookies">
+          <p>Cookies: Helping us make your browsing experience sweeter!</p>
+          <div class="buttons-container">
+            <button id="accept" class="log-in">Accept</button>
+            <button id="decline" class="log-in">Decline</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/js.cookie.min.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
