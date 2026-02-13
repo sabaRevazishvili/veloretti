@@ -183,7 +183,7 @@ h1 {
 }
 
 .background-image {
-  background-image: url("/images/Image1.png");
+  background-image: url("./images/Image1.png");
   height: 750px;
   width: 100%;
   background-size: cover;
@@ -242,11 +242,11 @@ h1 {
 }
 
 .two {
-  background-image: url("/images/backgroundimg.png ");
+  background-image: url("./images/backgroundimg.png ");
 }
 
 .three {
-  background-image: url("/images/image2.png");
+  background-image: url("./images/image2.png");
 }
 
 .madeforyou-container {
